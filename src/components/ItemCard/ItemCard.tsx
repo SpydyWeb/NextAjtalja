@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { StyledWrapper } from "./ItemCard.style";
 
 const ItemCard = ({ service }: { service: any }) => {

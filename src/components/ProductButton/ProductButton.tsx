@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { StyledWrapper } from "./ProductButton.styles";
 
 const ProductButton = ({
@@ -15,7 +16,7 @@ const ProductButton = ({
   return (
     <div className="flex justify-center items-center">
       {modesData.map((mode: any) => (
-        <StyledWrapper color={mode.color}>
+        <StyledWrapper color={mode.color} key={mode.code}>
           <div className="radio-tile-group">
             {
               <div className="input-container" key={mode.id}>
