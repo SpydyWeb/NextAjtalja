@@ -12,7 +12,7 @@ const ItemCard = ({ service }: { service: any }) => {
         <a className="card1" href="#">
           <p className="text-center inline-block text-2xl">{service.icon}</p>
           <p className="small">{service.title}</p>
-          <div className="go-corner" href="#">
+          <div className="go-corner">
             <div className="go-arrow">→</div>
           </div>
         </a>
